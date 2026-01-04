@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>뜨개동아리</title>
+  <meta name="description" content="뜨개동아리 공식 홈페이지 - 모임 소개, 일정, 작품, 가입 안내" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- 상단 공지(선택) -->
+  <div class="topbar" role="note">
+    <p class="topbar__text">🧶 신규 회원 모집 중! 매주 토요일 정기모임</p>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="홈으로">
+        <span class="brand__logo" aria-hidden="true">🧶</span>
+        <span class="brand__name">뜨개동아리</span>
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="nav__link" href="#about">소개</a>
+        <a class="nav__link" href="#schedule">일정</a>
+        <a class="nav__link" href="#gallery">작품</a>
+        <a class="nav__link" href="#join">가입</a>
+      </nav>
+
+      <a class="btn btn--primary header__cta" href="#join">가입 문의</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">초보 환영 · 재료 공유 · 소모임</p>
+          <h1 class="hero__title">
+            함께 뜨고, 함께 웃는<br />
+            <span class="hero__titleAccent">뜨개동아리</span>
+          </h1>
+          <p class="hero__desc">
+            첫 코부터 완성까지. 정기모임/번개모임/작품 전시를 함께해요.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#schedule">이번 달 일정 보기</a>
+            <a class="btn btn--ghost" href="#gallery">작품 둘러보기</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="동아리 요약">
+            <li class="stat">
+              <strong class="stat__num">매주</strong>
+              <span class="stat__label">정기모임</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__num">초보</strong>
+              <span class="stat__label">환영</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__num">작품</strong>
+              <span class="stat__label">전시/기록</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__card" aria-label="대표 이미지 영역">
+          <!-- 나중에 이미지로 교체 가능 -->
+          <div class="placeholder">
+            <p class="placeholder__title">대표 이미지</p>
+            <p class="placeholder__desc">여기에 동아리 사진/로고를 넣어주세요</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">동아리 소개</h2>
+          <p class="section__desc">
+            뜨개를 좋아하는 사람들이 모여 서로 배우고, 작품을 남기고, 함께 전시도 해요.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">초보자 케어</h3>
+            <p class="card__desc">기초 코잡기부터 패턴 읽기까지 천천히 도와드려요.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">함께 만드는 작품</h3>
+            <p class="card__desc">계절 소품/목도리/가방 등 월간 미션을 진행해요.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">기록 & 공유</h3>
+            <p class="card__desc">완성작 갤러리와 모임 사진을 남겨 추억을 쌓아요.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 일정 -->
+    <section id="schedule" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">모임 일정</h2>
+          <p class="section__desc">정기모임 + 번개모임을 업데이트해요.</p>
+        </div>
+
+        <div class="table">
+          <div class="table__row table__row--head">
+            <div>날짜</div>
+            <div>시간</div>
+            <div>장소</div>
+            <div>내용</div>
+          </div>
+
+          <!-- 예시 일정(필요한 만큼 복사) -->
+          <div class="table__row">
+            <div>1/11(토)</div>
+            <div>14:00</div>
+            <div>커뮤니티룸</div>
+            <div>초보 코잡기 + 실/바늘 소개</div>
+          </div>
+          <div class="table__row">
+            <div>1/25(토)</div>
+            <div>14:00</div>
+            <div>카페 모임</div>
+            <div>월간 미션 진행 + Q&A</div>
+          </div>
+        </div>
+
+        <p class="hint">* 일정은 상황에 따라 변경될 수 있어요.</p>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">작품 갤러리</h2>
+          <p class="section__desc">회원들의 완성작을 모아두는 공간이에요.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- 나중에 이미지로 교체 -->
+          <div class="thumb"><span>작품 1</span></div>
+          <div class="thumb"><span>작품 2</span></div>
+          <div class="thumb"><span>작품 3</span></div>
+          <div class="thumb"><span>작품 4</span></div>
+          <div class="thumb"><span>작품 5</span></div>
+          <div class="thumb"><span>작품 6</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 가입 -->
+    <section id="join" class="section section--alt">
+      <div class="container">
+        <div class="join">
+          <div class="join__text">
+            <h2 class="section__title">가입 / 문의</h2>
+            <p class="section__desc">
+              참여 희망하시면 아래 연락처로 문의해주세요. (카톡 오픈채팅/인스타/메일 등)
+            </p>
+
+            <ul class="list">
+              <li><strong>모임 빈도:</strong> 매주 1회</li>
+              <li><strong>준비물:</strong> 실/바늘 (처음은 대여 가능)</li>
+              <li><strong>회비:</strong> 0원 ~ 소액(장소대)</li>
+            </ul>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <label class="field">
+              <span class="field__label">이름</span>
+              <input class="field__input" type="text" name="name" placeholder="홍길동" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">연락처</span>
+              <input class="field__input" type="text" name="contact" placeholder="010-0000-0000" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">메시지</span>
+              <textarea class="field__input field__textarea" name="message" placeholder="간단한 자기소개/참여 목적"></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="button">
+              제출(데모)
+            </button>
+            <p class="hint">* 지금은 데모 폼이라 전송은 안 됩니다. Netlify Forms로 쉽게 연결 가능.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> 뜨개동아리. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#home">맨 위로</a>
+        <a href="#join">문의</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>뜨개동아리</title>
+  <meta name="description" content="뜨개동아리 공식 홈페이지 - 모임 소개, 일정, 작품, 가입 안내" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- 상단 공지(선택) -->
+  <div class="topbar" role="note">
+    <p class="topbar__text">🧶 신규 회원 모집 중! 매주 토요일 정기모임</p>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="홈으로">
+        <span class="brand__logo" aria-hidden="true">🧶</span>
+        <span class="brand__name">뜨개동아리</span>
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="nav__link" href="#about">소개</a>
+        <a class="nav__link" href="#schedule">일정</a>
+        <a class="nav__link" href="#gallery">작품</a>
+        <a class="nav__link" href="#join">가입</a>
+      </nav>
+
+      <a class="btn btn--primary header__cta" href="#join">가입 문의</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">초보 환영 · 재료 공유 · 소모임</p>
+          <h1 class="hero__title">
+            함께 뜨고, 함께 웃는<br />
+            <span class="hero__titleAccent">뜨개동아리</span>
+          </h1>
+          <p class="hero__desc">
+            첫 코부터 완성까지. 정기모임/번개모임/작품 전시를 함께해요.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#schedule">이번 달 일정 보기</a>
+            <a class="btn btn--ghost" href="#gallery">작품 둘러보기</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="동아리 요약">
+            <li class="stat">
+              <strong class="stat__num">매주</strong>
+              <span class="stat__label">정기모임</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__num">초보</strong>
+              <span class="stat__label">환영</span>
+            </li>
+            <li class="stat">
+              <strong class="stat__num">작품</strong>
+              <span class="stat__label">전시/기록</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__card" aria-label="대표 이미지 영역">
+          <!-- 나중에 이미지로 교체 가능 -->
+          <div class="placeholder">
+            <p class="placeholder__title">대표 이미지</p>
+            <p class="placeholder__desc">여기에 동아리 사진/로고를 넣어주세요</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">동아리 소개</h2>
+          <p class="section__desc">
+            뜨개를 좋아하는 사람들이 모여 서로 배우고, 작품을 남기고, 함께 전시도 해요.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">초보자 케어</h3>
+            <p class="card__desc">기초 코잡기부터 패턴 읽기까지 천천히 도와드려요.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">함께 만드는 작품</h3>
+            <p class="card__desc">계절 소품/목도리/가방 등 월간 미션을 진행해요.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">기록 & 공유</h3>
+            <p class="card__desc">완성작 갤러리와 모임 사진을 남겨 추억을 쌓아요.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 일정 -->
+    <section id="schedule" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">모임 일정</h2>
+          <p class="section__desc">정기모임 + 번개모임을 업데이트해요.</p>
+        </div>
+
+        <div class="table">
+          <div class="table__row table__row--head">
+            <div>날짜</div>
+            <div>시간</div>
+            <div>장소</div>
+            <div>내용</div>
+          </div>
+
+          <!-- 예시 일정(필요한 만큼 복사) -->
+          <div class="table__row">
+            <div>1/11(토)</div>
+            <div>14:00</div>
+            <div>커뮤니티룸</div>
+            <div>초보 코잡기 + 실/바늘 소개</div>
+          </div>
+          <div class="table__row">
+            <div>1/25(토)</div>
+            <div>14:00</div>
+            <div>카페 모임</div>
+            <div>월간 미션 진행 + Q&A</div>
+          </div>
+        </div>
+
+        <p class="hint">* 일정은 상황에 따라 변경될 수 있어요.</p>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">작품 갤러리</h2>
+          <p class="section__desc">회원들의 완성작을 모아두는 공간이에요.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- 나중에 이미지로 교체 -->
+          <div class="thumb"><span>작품 1</span></div>
+          <div class="thumb"><span>작품 2</span></div>
+          <div class="thumb"><span>작품 3</span></div>
+          <div class="thumb"><span>작품 4</span></div>
+          <div class="thumb"><span>작품 5</span></div>
+          <div class="thumb"><span>작품 6</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 가입 -->
+    <section id="join" class="section section--alt">
+      <div class="container">
+        <div class="join">
+          <div class="join__text">
+            <h2 class="section__title">가입 / 문의</h2>
+            <p class="section__desc">
+              참여 희망하시면 아래 연락처로 문의해주세요. (카톡 오픈채팅/인스타/메일 등)
+            </p>
+
+            <ul class="list">
+              <li><strong>모임 빈도:</strong> 매주 1회</li>
+              <li><strong>준비물:</strong> 실/바늘 (처음은 대여 가능)</li>
+              <li><strong>회비:</strong> 0원 ~ 소액(장소대)</li>
+            </ul>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <label class="field">
+              <span class="field__label">이름</span>
+              <input class="field__input" type="text" name="name" placeholder="홍길동" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">연락처</span>
+              <input class="field__input" type="text" name="contact" placeholder="010-0000-0000" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">메시지</span>
+              <textarea class="field__input field__textarea" name="message" placeholder="간단한 자기소개/참여 목적"></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="button">
+              제출(데모)
+            </button>
+            <p class="hint">* 지금은 데모 폼이라 전송은 안 됩니다. Netlify Forms로 쉽게 연결 가능.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> 뜨개동아리. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#home">맨 위로</a>
+        <a href="#join">문의</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
